@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 216 17% 97%;
+    --foreground: 0 0% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    --primary: 216 61% 26%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 216 20% 95%;
+    --secondary-foreground: 0 0% 13%;
+
+    --muted: 216 15% 92%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 32 29% 69%;
+    --accent-foreground: 0 0% 13%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 216 15% 88%;
+    --input: 216 15% 90%;
+    --ring: 216 61% 26%;
+
+    --radius: 0.25rem;
+    
+    /* Custom architectural design tokens */
+    --navy-deep: 216 61% 26%;
+    --beige-muted: 32 29% 69%;
+    --blue-light: 216 40% 95%;
+    --blue-accent: 216 85% 60%;
+    --charcoal: 0 0% 13%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(216 20% 95%) 0%, hsl(216 17% 97%) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(216 61% 26%) 0%, hsl(216 85% 60%) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 20px rgba(26, 58, 110, 0.08);
+    --shadow-hover: 0 8px 30px rgba(26, 58, 110, 0.12);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 216 25% 12%;
+    --foreground: 0 0% 95%;
+
+    --card: 216 20% 15%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 216 20% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 216 85% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 216 20% 20%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 216 15% 25%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 32 29% 69%;
+    --accent-foreground: 0 0% 13%;
+
+    --destructive: 0 62.8% 50.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 216 15% 25%;
+    --input: 216 15% 25%;
+    --ring: 216 85% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
