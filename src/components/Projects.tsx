@@ -3,6 +3,24 @@ import { useState } from "react";
 import { projects, Project } from "@/data/projects";
 import { ExternalLink } from "lucide-react";
 
+// Import all images
+import g7MixedUse from "@/assets/g7-mixed-use-building.jpg";
+import interiorDesign from "@/assets/Interior-Design.png";
+import busTerminal from "@/assets/arba-minch-bus-terminal.jpg";
+import bedroom from "@/assets/Bedroom-Interior.png";
+import mixedUse from "@/assets/Mixed-Use-Building.jpg";
+import apartment from "@/assets/Apartment-interior.jpg";
+
+// Create a mapping object
+const imageMap = {
+  "/src/assets/g7-mixed-use-building.jpg": g7MixedUse,
+  "/src/assets/Interior-Design.png": interiorDesign,
+  "/src/assets/arba-minch-bus-terminal.jpg": busTerminal,
+  "/src/assets/Bedroom-Interior.png": bedroom,
+  "/src/assets/Mixed-Use-Building.jpg": mixedUse,
+  "/src/assets/Apartment-interior.jpg": apartment,
+};
+
 const Projects = () => {
   const [filter, setFilter] = useState<"all" | "interior" | "architecture">("all");
 
@@ -59,12 +77,12 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Projects grid - Remove whileInView and use animate instead */}
+        {/* Projects grid */}
         <motion.div
-          key={filter} // This forces re-render when filter changes
+          key={filter}
           variants={container}
           initial="hidden"
-          animate="show" // Changed from whileInView to animate
+          animate="show"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {filteredProjects.map((project) => (
@@ -75,7 +93,7 @@ const Projects = () => {
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src={project.image}
+                  src={imageMap[project.image as keyof typeof imageMap]}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
