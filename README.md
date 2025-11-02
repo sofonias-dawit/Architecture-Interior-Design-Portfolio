@@ -72,4 +72,4 @@ Preview production build: npm run preview
 
 Lint code: npm run lint
 
-thanks!"# Architecture-Interior-Design-Portfolio" 
+thanks!
