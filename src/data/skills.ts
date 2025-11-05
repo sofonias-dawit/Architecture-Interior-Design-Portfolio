@@ -1,18 +1,18 @@
-import { Box, Package, Lightbulb, PenTool, Hexagon, Building2, Image } from "lucide-react";
+import { SiInkscape, SiSketchup, SiLumen, SiAutodesk, SiRhinoceros, SiAdobe } from "react-icons/si";
 import { LucideIcon } from "lucide-react";
 
 export interface Skill {
   name: string;
   level: number; // 0-100
-  icon: LucideIcon;
+  icon: LucideIcon | any;
 }
 
 export const skills: Skill[] = [
-  { name: "Enscape", level: 85, icon: Box },
-  { name: "SketchUp", level: 90, icon: Package },
-  { name: "Lumion", level: 80, icon: Lightbulb },
-  { name: "AutoCAD", level: 88, icon: PenTool },
-  { name: "Rhino", level: 75, icon: Hexagon },
-  { name: "Revit", level: 82, icon: Building2 },
-  { name: "Photoshop", level: 85, icon: Image }
+  { name: "Enscape", level: 87, icon: SiInkscape },
+  { name: "SketchUp", level: 90, icon: SiSketchup },
+  { name: "Lumion", level: 88, icon: SiLumen },
+  { name: "AutoCAD", level: 91, icon: SiAutodesk }, // Autodesk makes AutoCAD
+  { name: "Rhino", level: 84, icon: SiRhinoceros },
+  { name: "Revit", level: 96, icon: SiAutodesk }, // Autodesk makes Revit
+  { name: "Photoshop", level: 90, icon: SiAdobe } // Adobe makes Photoshop
 ];
