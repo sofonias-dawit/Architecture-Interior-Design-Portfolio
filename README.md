@@ -76,4 +76,4 @@ Lint code: npm run lint
 Thanks!
 =======
 thanks!
->>>>>>> 8433d05be9840c034108e4a292c1763e812737f8
+>>>>>>
