@@ -29,7 +29,7 @@ This is a professional portfolio website for a 5th Year Architecture & Urban Pla
 - shadcn/ui (UI components)
 
 **Tools & Services:**
-- EmailJS (Contact form)
+- [Formspree] (Contact form)
 
 ## 🚀 Getting Started
 
