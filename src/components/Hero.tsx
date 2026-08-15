@@ -70,7 +70,7 @@ const Hero = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-muted-foreground mb-6"
           >
-            5th Year Architecture & Urban Planning Student
+            Architecture & Urban Planning Graduate
           </motion.p>
 
           {/* Social Links */}
