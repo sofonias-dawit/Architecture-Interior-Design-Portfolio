@@ -108,10 +108,10 @@ const Hero = () => {
           >
             <h2 className="text-2xl font-heading font-semibold text-primary mb-4">About Me</h2>
             <p className="text-foreground leading-relaxed">
-              I'm Filenbar Alemu, a 5th-year Architecture and Urban Planning student at Arba Minch University. 
-              I'm passionate about architectural and interior design, creating spaces that are functional, aesthetic, 
-              and environmentally responsible. My design approach focuses on blending creativity with practicality — 
-              shaping buildings and interiors that reflect harmony between people, nature, and technology.
+              I'm Filenbar Alemu, an Architecture and Urban Planning graduate from Arba Minch University.
+              I’m passionate about architectural and interior design, creating spaces that are functional,
+              aesthetic, and environmentally responsible. My design approach combines creativity with practicality,
+              with a focus on shaping thoughtful spaces that promote harmony between people, nature, and technology.
             </p>
           </motion.div>
 
