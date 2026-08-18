@@ -76,7 +76,7 @@ const Footer = () => {
   <p className="mt-1">
     Developed by{" "}
     <a
-      href="https://t.me/sofoniasdawit"
+      href="https://github.com/sofonias-dawit"
       target="_blank"
       rel="noopener noreferrer"
       className="text-primary-foreground hover:underline"
