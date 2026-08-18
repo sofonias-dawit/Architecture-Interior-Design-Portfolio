@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
-import { FileText, ExternalLink, Briefcase } from "lucide-react";
+import { FileText, ExternalLink, Briefcase, Image } from "lucide-react";
+
+// Note: Adjust the "../" path if your component is located deeper in your folder structure
+import recommendationLetter from "../assets/Recommendation_letter_fila.jpg";
 
 const FullPortfolio = () => {
   return (
@@ -117,22 +120,37 @@ const FullPortfolio = () => {
                       <div className="w-1.5 h-1.5 bg-blue-accent rounded-full" />
                       Certifications & Awards
                     </div>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <div className="w-1.5 h-1.5 bg-blue-accent rounded-full" />
+                      Letters of Recommendation
+                    </div>
                   </div>
 
-                  <a
-                    href="https://drive.google.com/file/d/1Nh7Y88gsVZ-QIJLM_8C2r_88WLj8b7k4/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-blue-accent transition-all shadow-soft hover:shadow-hover group w-fit"
-                  >
-                    View CV on Google Drive
-                    <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </a>
+                  <div className="flex flex-wrap items-center gap-4">
+                    <a
+                      href="https://drive.google.com/file/d/1Nh7Y88gsVZ-QIJLM_8C2r_88WLj8b7k4/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-blue-accent transition-all shadow-soft hover:shadow-hover group w-fit"
+                    >
+                      View CV
+                      <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </a>
+                    
+                    <a
+                      href={recommendationLetter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary text-primary rounded-lg hover:bg-primary/5 transition-all group w-fit"
+                    >
+                      View Recommendation
+                      <Image className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
         </motion.div>
       </div>
     </section>
